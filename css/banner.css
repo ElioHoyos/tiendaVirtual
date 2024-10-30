@@ -1,0 +1,98 @@
+/* banner */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner .textoBanner{
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+}
+.banner .textoDer{
+    top: 50px;
+    right: 50px;
+    text-align: right;
+}
+.banner .textoIzq{
+    top: 50px;
+    right: 50px;
+    text-align: right;
+}
+.banner .textoCentro{
+    top: 50px;
+    left: 50px;
+    width: 800px;
+    text-align: center;
+    margin-left: -400px;
+}
+.textoBanner h1{
+    font-size: 35px;
+    line-height: 25px;
+}
+.textoBanner h2{
+    font-size: 30px;
+    line-height: 25px;
+}
+.textoBanner h3{
+    font-size: 25px;
+    line-height: 24px;
+}
+
+/* escritorio grander */
+@media (min-width:1200px){
+    .banner{
+        height: 260px;
+    }
+}
+/* escritorio mediano */
+@media (max-width:1199px) and (min-width:992px){
+    .banner{
+        height: 260px;
+    }
+}
+/* escritorio pequeño */
+@media (max-width:991px) and (min-width:768px){
+    .banner{
+        height: 180px;
+    }
+    .textoBanner h1{
+        font-size: 30px;
+        line-height: 15px;
+    }
+    .textoBanner h2{
+        font-size: 25px;
+        line-height: 15px;
+    }
+    .textoBanner h3{
+        font-size: 25px;
+        line-height: 15px;
+    }
+    .banner .textoDer, .banner .textoIzq, .banner .textoCentro{
+        top: 35px;
+    }
+}
+/* movil */
+@media (max-width:767px){
+    .banner{
+        height: 100px;
+    }
+    .banner .textoDer, .banner .textoCentro, .banner .textoIzq{
+        top: 7px;
+        left: 50%;
+        width: 800px;
+        margin-left: -400px;
+        text-align: center;
+        text-shadow: 2px 2px 20px #f40808;
+    }
+    .textoBanner h1{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .textoBanner h2{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .textoBanner h3{
+        font-size: 15px;
+        line-height: 5px;
+    }
+}

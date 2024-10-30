@@ -45,7 +45,8 @@ a:visited, a:link, a:focus, a:hover, a:active{
     color: white;
 }
 .backColor, .backColor a{
-    background: #0ab2e6;
+    background: #ee4b22;
+    color: white;
 }
 /* escritorio grande (LG revisamos en 1366px en adelante) */
 @media (min-width:1200px){
